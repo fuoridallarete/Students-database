@@ -65,4 +65,11 @@ public class Student {
     viewBalance();
   }
   //show student' status
+  public String toString(){
+    return "Name: " + firstName + " " + lastName +
+           "\nGrade Level: " + gradeYear +
+           "\nStudent ID: " + studentId +
+           "\nCourses enrolled: " + courses +
+           "\nBalance: " + tuitionBalance;
+  }
  } 
