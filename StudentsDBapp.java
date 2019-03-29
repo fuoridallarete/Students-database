@@ -10,6 +10,13 @@ public class StudentsDBapp {
     //create array of students (array of objects)
     int numOfStudents = in.nextInt();
     Student[] students = new Student[numOfStudents];
+    //then we iterate through this array of objects of type Student
+    for(int n = 0; n < numOfStudents; n++){
+      students[n] = new Student();
+      students[n].enroll();
+      students[n].payTuition();
+      System.out.println(students[n].toString());
+    }
  }
 } 
  
